@@ -50,6 +50,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 
 ## Installing Gulp
 
+1. First, create a `gulp-class` folder, `cd` into it, and `npm init -y` your project
 1. You'll want to install gulp globally. You can do this by running the `npm install gulp -g` command.
 1. We also need to include gulp in our project. To do that, we will run `npm install gulp --save-dev`. Let's use `--save-dev` (a production environment should not be concerned with build tools).
 1. Now, run `gulp`!
@@ -110,7 +111,7 @@ Finished 'default' after 144 μs
 Create a new directory `sass-to-css` and `cd` into it.
 
 ```bash
-npm init
+npm init -y
 npm install --save-dev gulp gulp-sass
 ```
 
@@ -149,14 +150,14 @@ Now we can run our Sass compilation with just `gulp`.
 
 ### Compiling ES6
 
-We've yet to talk about ES6, aka ECMAScript 2015, but it's the next iteration of JavaScript so let's get a taste for it. It's nice to write in, but not supported everywhere yet. Let's write some ES6 code and compile it to ES5, which is universally supported.
+Now let's talk about ES6, aka ECMAScript 2015, the next iteration of JavaScript. Let's write some ES6 code and compile it to ES5, which is universally supported.
 
 Create a new directory somewhere called `es6-to-es5` and `cd` into it.
 
 Require all the modules we'll be using.
 
 ```bash
-npm init
+npm init -y
 npm install --save-dev gulp gulp-babel babel-preset-es2015
 ```
 
@@ -212,9 +213,9 @@ class Person {
 module.exports = Person
 ```
 
-Run `gulp` in your project's root, then create an `app.js` file in your `src` directory and save it. What happened? Also in the root of your project, run `node` and require the `Person` class with `var Person = require(./dist/app.js)`.
+Create an empty `app.js` file in your `src` directory and save it. Then run `gulp` in your project's root. Finally, copy the code above into `app.js`. What happened?
 
->Note: we are requiring the transpiled ES5 code into node.
+<!-- Go into dist/app.js and create a `new` Person for me.  console.log(zeb.greet()) and run app.js with node -->
 
 <!--12:15 10 minutes -->
 
