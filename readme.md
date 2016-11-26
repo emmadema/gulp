@@ -5,6 +5,12 @@ Market: SF
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--Ideally, I want to shave a minute off of each of these sections so we can get enough time for the ES6 quiz.  If not, we will have to skip it, and use it as a morning exercise. -->
+
+<!-- 11:20 5 minutes -->
+
+<!--Hook: So we just talked about Sass and how it can make our lives easier.  We also know that ES6 can make our JS applications more modern.  We also know about minification which can speed up our web applications.  But every time we try to convert Sass to CSS, ES6 to ES5, or big JS files to minified JS files, we have to copy our code into a converter somewhere.  How annoying!  With Gulp, we can get that done automatically, every time we change one of our files. -->
+
 # Gulp
 
 ### Why is this important?
@@ -17,22 +23,30 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
 
-* Write a Gulp task and run it
-* Leverage pre-built Gulp plugins
+<!--Get student to read aloud -->
+
+* **Write** a Gulp task and run it
+* **Leverage** pre-built Gulp plugins
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
-* Implement client & server-side JavaScript.
+* **Implement** client & server-side JavaScript.
+
+<!--11:25 5 minutes -->
 
 ## Introducing Gulp
+
+<!--Get student to read aloud -->
 
 * Gulp is a software built on Node.
 * It runs **tasks** that manipulate files on your system.
 * It is an active, open-source project.
 * There are many community-built plugins built to work directly with gulp.
 * Among other things, it is commonly used for transcompilation and minificiation to automate your workflow.
+
+<!--11:30 5 minutes -->
 
 ## Installing Gulp
 
@@ -54,6 +68,8 @@ Please check the documentation for proper gulpfile formatting
 
 Another error! Ok, let's solve this problem by defining a Gulp task.
 
+<!--11:35 5 minutes -->
+
 ## Defining a Gulp Task
 
 * What is a task?
@@ -62,6 +78,8 @@ Another error! Ok, let's solve this problem by defining a Gulp task.
 * A task may perform one job; it may also perform many at once.
 
 In our `gulpfile.js` we need to include the `gulp` module. To do this, we should define a variable: `var gulp = require('gulp');` This will allow us to call upon Gulp to **create a task**.
+
+<!--11:40 10 minutes -->
 
 ### First (Default) Task
 
@@ -84,6 +102,9 @@ Starting 'default'...
 I am the default task. Hear me roar
 Finished 'default' after 144 μs
 ```
+
+<!--11:50 10 minutes -->
+
 ### Compiling Sass
 
 Create a new directory `sass-to-css` and `cd` into it.
@@ -121,6 +142,10 @@ gulp.task('default',function() {
     gulp.watch('sass/**/*.scss',['styles']);
 });
 ```
+
+Now we can run our Sass compilation with just `gulp`.
+
+<!--12:00 15 minutes -->
 
 ### Compiling ES6
 
@@ -191,9 +216,13 @@ Run `gulp` in your project's root, then create an `app.js` file in your `src` di
 
 >Note: we are requiring the transpiled ES5 code into node.
 
-**Challenge: Can you instantiate a new person?**
+<!--12:15 10 minutes -->
+
+## More ES6
 
 Exciting stuff! Here's a quick look at some of the [new ES6 syntax](https://github.com/lukehoban/es6features). Take a moment to review it and then try out this [online quiz](http://tutorialzine.com/2015/11/think-you-know-es6-prove-it/) (open book is fine). It will introduce you to some new ES6 concepts. Feel free to jot down anything that's surprising and we'll discuss it. Feel free to try any of this fancy ES6 stuff out in your `src/app.js` file.
+
+<!--12:25 5 minutes -->
 
 ## Additional Notes
 
