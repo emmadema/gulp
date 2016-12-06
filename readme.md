@@ -7,6 +7,8 @@ Market: SF
 
 <!--Ideally, I want to shave a minute off of each of these sections so we can get enough time for the ES6 quiz.  If not, we will have to skip it, and use it as a morning exercise. -->
 
+<!--11:20 actually-->
+
 <!-- 11:10 5 minutes -->
 
 <!--Hook: So we just talked about Sass and how it can make our lives easier.  We also know that ES6 can make our JS applications more modern.  We also know about minification which can speed up our web applications.  But every time we try to convert Sass to CSS, ES6 to ES5, or big JS files to minified JS files, we have to copy our code into a converter somewhere.  How annoying!  With Gulp, we can get that done automatically, every time we change one of our files. -->
@@ -80,6 +82,8 @@ Another error! Ok, let's solve this problem by defining a Gulp task.
 
 In our `gulpfile.js` we need to include the `gulp` module. To do this, we should define a variable: `var gulp = require('gulp');` This will allow us to call upon Gulp to **create a task**.
 
+<!--11:35-->
+
 <!--11:35 10 minutes -->
 
 ### First (Default) Task
@@ -103,6 +107,8 @@ Starting 'default'...
 I am the default task. Hear me roar
 Finished 'default' after 144 μs
 ```
+
+<!--11:38 -->
 
 <!--11:45 15 minutes -->
 
@@ -136,6 +142,8 @@ Run `gulp styles` and it will find your `.scss` file and output a corresponding 
 
 Lastly let's add the task we just created to gulp's `default` task and have it run the task upon file changes by watching the file. Now every time you save, your `.scss` will trigger the `styles` gulp task and compile the changes for you!
 
+<!-- OH MY GOD SO MUCH FOLDER CONFUSION NOBODY HAS ANY IDEA WHERE THEY'RE TYPING ANYTHING this took up a bunch of time to correct -->
+
 To do this, at the bottom of your file add:
 
 ```js
@@ -155,6 +163,8 @@ Now let's talk about ES6, aka ECMAScript 2015, the next iteration of JavaScript.
 Create a new directory somewhere called `es6-to-es5` and `cd` into it.
 
 Require all the modules we'll be using.
+
+<!--12:15-->
 
 ```bash
 npm init -y
@@ -218,6 +228,8 @@ Create an empty `app.js` file in your `src` directory and save it. Then run `gul
 <!-- Go into dist/app.js and create a `new` Person for me.  console.log(zeb.greet()) and run app.js with node -->
 
 <!--12:15 10 minutes -->
+
+<!--12:31 actually-->
 
 ## More ES6
 
