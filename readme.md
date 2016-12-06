@@ -7,7 +7,7 @@ Market: SF
 
 <!--Ideally, I want to shave a minute off of each of these sections so we can get enough time for the ES6 quiz.  If not, we will have to skip it, and use it as a morning exercise. -->
 
-<!-- 11:20 5 minutes -->
+<!-- 11:05 5 minutes -->
 
 <!--Hook: So we just talked about Sass and how it can make our lives easier.  We also know that ES6 can make our JS applications more modern.  We also know about minification which can speed up our web applications.  But every time we try to convert Sass to CSS, ES6 to ES5, or big JS files to minified JS files, we have to copy our code into a converter somewhere.  How annoying!  With Gulp, we can get that done automatically, every time we change one of our files. -->
 
@@ -34,7 +34,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 
 * **Implement** client & server-side JavaScript.
 
-<!--11:25 5 minutes -->
+<!--11:10 5 minutes -->
 
 ## Introducing Gulp
 
@@ -46,7 +46,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 * There are many community-built plugins built to work directly with gulp.
 * Among other things, it is commonly used for transcompilation and minificiation to automate your workflow.
 
-<!--11:30 5 minutes -->
+<!--11:15 10 minutes -->
 
 ## Installing Gulp
 
@@ -69,7 +69,7 @@ Please check the documentation for proper gulpfile formatting
 
 Another error! Ok, let's solve this problem by defining a Gulp task.
 
-<!--11:35 5 minutes -->
+<!--11:25 5 minutes -->
 
 ## Defining a Gulp Task
 
@@ -80,7 +80,7 @@ Another error! Ok, let's solve this problem by defining a Gulp task.
 
 In our `gulpfile.js` we need to include the `gulp` module. To do this, we should define a variable: `var gulp = require('gulp');` This will allow us to call upon Gulp to **create a task**.
 
-<!--11:40 10 minutes -->
+<!--11:30 10 minutes -->
 
 ### First (Default) Task
 
@@ -104,7 +104,7 @@ I am the default task. Hear me roar
 Finished 'default' after 144 μs
 ```
 
-<!--11:50 10 minutes -->
+<!--11:40 15 minutes -->
 
 ### Compiling Sass
 
@@ -146,7 +146,7 @@ gulp.task('default',function() {
 
 Now we can run our Sass compilation with just `gulp`.
 
-<!--12:00 15 minutes -->
+<!--11:55 15 minutes -->
 
 ### Compiling ES6
 
@@ -217,13 +217,13 @@ Create an empty `app.js` file in your `src` directory and save it. Then run `gul
 
 <!-- Go into dist/app.js and create a `new` Person for me.  console.log(zeb.greet()) and run app.js with node -->
 
-<!--12:15 10 minutes -->
+<!--12:10 10 minutes -->
 
 ## More ES6
 
 Exciting stuff! Here's a quick look at some of the [new ES6 syntax](https://github.com/lukehoban/es6features). Take a moment to review it and then try out this [online quiz](http://tutorialzine.com/2015/11/think-you-know-es6-prove-it/) (open book is fine). It will introduce you to some new ES6 concepts. Feel free to jot down anything that's surprising and we'll discuss it. Feel free to try any of this fancy ES6 stuff out in your `src/app.js` file.
 
-<!--12:25 5 minutes -->
+<!--12:20 5 minutes -->
 
 ## Additional Notes
 
