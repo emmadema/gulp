@@ -229,6 +229,7 @@ Create an empty `app.js` file in your `src` directory and save it. Then run `gul
 
 <!--12:15 10 minutes -->
 
+<!--Based on timing, this should probably move to the following day -->
 <!--12:31 actually-->
 
 ## More ES6
