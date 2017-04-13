@@ -9,6 +9,7 @@ Market: SF
 
 <!--11:20 actually-->
 
+<!--11:06 WDI3 -->
 <!-- 11:10 5 minutes -->
 
 <!--Hook: So we just talked about Sass and how it can make our lives easier.  We also know that ES6 can make our JS applications more modern.  We also know about minification which can speed up our web applications.  But every time we try to convert Sass to CSS, ES6 to ES5, or big JS files to minified JS files, we have to copy our code into a converter somewhere.  How annoying!  With Gulp, we can get that done automatically, every time we change one of our files. -->
@@ -36,6 +37,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 
 * **Implement** client & server-side JavaScript.
 
+<!--WDI3 11:08 -->
 <!--11:15 5 minutes -->
 
 ## Introducing Gulp
@@ -48,6 +50,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 * There are many community-built plugins built to work directly with gulp.
 * Among other things, it is commonly used for transcompilation and minificiation to automate your workflow.
 
+<!--11:11 after demoing and turning over to devs -->
 <!--11:20 10 minutes -->
 
 ## Installing Gulp
@@ -84,6 +87,7 @@ In our `gulpfile.js` we need to include the `gulp` module. To do this, we should
 
 <!--11:35-->
 
+<!--WDI3 11:20 when turning over to devs -->
 <!--11:35 10 minutes -->
 
 ### First (Default) Task
@@ -110,16 +114,18 @@ Finished 'default' after 144 μs
 
 <!--11:38 -->
 
+<!--11:2  WDI3 -->
 <!--11:45 15 minutes -->
 
 ### Compiling Sass
 
-Create a new directory `sass-to-css` and `cd` into it.
+Now let's compile some Sass to CSS `sass-to-css`.  We need to start by requiring the `gulp-sass` plugin for Gulp.
 
 ```bash
-npm init -y
 npm install --save-dev gulp gulp-sass
 ```
+
+Then we can require it in our `gulpfile.js`.
 
 ```js
 //gulpfile.js
@@ -158,26 +164,17 @@ Now we can run our Sass compilation with just `gulp`.
 
 ### Compiling ES6
 
-Now let's talk about ES6, aka ECMAScript 2015, the next iteration of JavaScript. Let's write some ES6 code and compile it to ES5, which is universally supported.
-
-Create a new directory somewhere called `es6-to-es5` and `cd` into it.
+Now let's talk about ES6, aka ECMAScript 2015, the next iteration of JavaScript. Let's write some ES6 code and compile it to ES5, which is universally supported.  Again, we need some Gulp plugins.
 
 Require all the modules we'll be using.
 
 <!--12:15-->
 
 ```bash
-npm init -y
-npm install --save-dev gulp gulp-babel babel-preset-es2015
+npm install --save-dev gulp-babel babel-preset-es2015
 ```
 
-Create a file for `gulp` to reference.
-
-```bash
-touch gulpfile.js
-```
-
-Inside the file do something similar to what we did to transpile our sass. Instead now we'll be using `gulp-babel` to help us transpile our ES6 to ES5.
+Inside `gulpfile.js`, do something similar to what we did to transpile our sass. Instead now we'll be using `gulp-babel` to help us transpile our ES6 to ES5.
 
 Here we'll be creating a task called `scripts`. It will read in all our ES6 `.js` files living inside the `src` directory, pipe them through our babel to transpile them to ES5 and then send the output to corresponding files in the `dist` directory.
 
