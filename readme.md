@@ -114,15 +114,15 @@ Finished 'default' after 144 μs
 
 <!--11:38 -->
 
-<!--11:2  WDI3 -->
+<!--11:24  WDI3 -->
 <!--11:45 15 minutes -->
 
 ### Compiling Sass
 
-Now let's compile some Sass to CSS `sass-to-css`.  We need to start by requiring the `gulp-sass` plugin for Gulp.
+Now let's compile some Sass to CSS.  We need to start by requiring the `gulp-sass` plugin for Gulp.
 
 ```bash
-npm install --save-dev gulp gulp-sass
+npm install --save-dev gulp-sass
 ```
 
 Then we can require it in our `gulpfile.js`.
