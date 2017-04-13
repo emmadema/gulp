@@ -1,11 +1,11 @@
 <!--
-Creator: <Name>
-Market: SF
+Creator: Zeb Girouard
+Market: DEN
 -->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-<!--Ideally, I want to shave a minute off of each of these sections so we can get enough time for the ES6 quiz.  If not, we will have to skip it, and use it as a morning exercise. -->
+<!--We need to make sure this comes after Sass in the future -->
 
 <!--11:20 actually-->
 
@@ -148,7 +148,7 @@ Run `gulp styles` and it will find your `.scss` file and output a corresponding 
 
 Lastly let's add the task we just created to gulp's `default` task and have it run the task upon file changes by watching the file. Now every time you save, your `.scss` will trigger the `styles` gulp task and compile the changes for you!
 
-<!-- OH MY GOD SO MUCH FOLDER CONFUSION NOBODY HAS ANY IDEA WHERE THEY'RE TYPING ANYTHING this took up a bunch of time to correct -->
+<!--11:32 when turning over to devs -->
 
 To do this, at the bottom of your file add:
 
@@ -197,9 +197,13 @@ gulp.task('default',function() {
 });
 ```
 
+<!--12:02 when turning over to devs WDI3 -->
+
 >Note: Babel is the transpiler we'll be using to convert our ES6 to ES5. `babel-preset-es2015` is one of the preset collection of [plugins](https://babeljs.io/docs/plugins/) we can use for it. It contains all the features for ES6 packed together, but in theory you could only require `es2015-arrow-functions` or `es2015-classes`, for example, if you wish to be more specific.
 
 Let's try out some ES6. Below find some working ES6 code, take a moment to look it over. What are your thoughts?
+
+<!--12:08 WDI3 -->
 
 ```js
 // define an ES6 class called Person
@@ -227,7 +231,9 @@ Create an empty `app.js` file in your `src` directory and save it. Then run `gul
 <!--12:15 10 minutes -->
 
 <!--Based on timing, this should probably move to the following day -->
-<!--12:31 actually-->
+<!--12:31 actually WDI2-->
+
+<!--At 12:14 in WDI3 ran through "Additional Notes" then let them work through ES6 quiz for rest of class -->
 
 ## More ES6
 
