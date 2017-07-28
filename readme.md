@@ -9,6 +9,7 @@ Market: DEN
 
 <!--11:20 actually-->
 
+<!--10:32 WDI4 -->
 <!--11:06 WDI3 -->
 <!-- 11:10 5 minutes -->
 
@@ -38,6 +39,7 @@ Gulp is a useful tool for automating tasks in order to increase productivity. To
 * **Implement** client & server-side JavaScript.
 
 <!--WDI3 11:08 -->
+<!--10:34 WDI4 -->
 <!--11:15 5 minutes -->
 
 ## Introducing Gulp
@@ -112,6 +114,7 @@ I am the default task. Hear me roar
 Finished 'default' after 144 μs
 ```
 
+<!--WDI4 10:43 turning over to devs -->
 <!--11:38 -->
 
 <!--11:24  WDI3 -->
@@ -149,6 +152,7 @@ Run `gulp styles` and it will find your `.scss` file and output a corresponding 
 Lastly let's add the task we just created to gulp's `default` task and have it run the task upon file changes by watching the file. Now every time you save, your `.scss` will trigger the `styles` gulp task and compile the changes for you!
 
 <!--11:32 when turning over to devs -->
+<!--11:00 WDI4 coming back -->
 
 To do this, at the bottom of your file add:
 
@@ -160,6 +164,8 @@ gulp.task('default',function() {
 
 Now we can run our Sass compilation with just `gulp`.
 
+<!--WDI4 11:03 turning over to devs -->
+<!--WDI4 11:07 coming back -->
 <!--12:00 15 minutes -->
 
 ### Compiling ES6
@@ -223,6 +229,9 @@ class Person {
 // export the Person class
 module.exports = Person
 ```
+
+<!--11:16 turning over to devs WDI4-->
+<!--11:21 WDI4 coming back -->
 
 Create an empty `app.js` file in your `src` directory and save it. Then run `gulp` in your project's root. Finally, copy the code above into `app.js`. What happened?
 
